@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      :root {
+        --Stone100: hsl(30, 54%, 90%);
+        --Stone150: hsl(30, 18%, 87%);
+        --Stone600: hsl(30, 10%, 34%);
+        --Stone900: hsl(24, 5%, 18%);
+        --Brown800: hsl(14, 45%, 36%);
+        --Rose800: hsl(332, 51%, 32%);
+        --Rose50: hsl(330, 100%, 98%);
+      }
+      @font-face {
+        font-family: "Outfit";
+        src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+          format("truetype");
+        /* font-weight: normal; 
+        font-style: normal; */
+      }
+      @font-face {
+        font-family: "YoungSerif";
+        src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf")
+          format("truetype");
+      }
+
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+      h1,
+      h2 {
+        font-family: "YoungSerif", sans-serif;
+      }
+      ul li {
+        list-style-type: disc;
+        margin: 10px;
+      }
+      ol li {
+        list-style-type: decimal;
+      }
+      li {
+        text-indent: 0;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="min-h-screen py-0 md:py-20 bg-[var(--Stone100)]">
+      <div
+        class="w-full md:w-7/12 lg:w-5/12 m-auto p-0 md:p-10 bg-white rounded-lg"
+      >
+        <div>
+          <img
+            src="/recipe-page/assets/images/image-omelette.jpeg"
+            class="rounded-lg"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="p-6 md:p-0">
+            <div class="my-8">
+              <h1 class="text-3xl mb-4 capitalize">Simple Omelette Recipe</h1>
+              <p class="font-light">
+                An easy and quick dish, perfect for any meal. This classic
+                omelette combines beaten eggs cooked to perfection, optionally
+                filled with your choice of cheese, vegetables, or meats.
+              </p>
+            </div>
+            <div class="p-8 mt-4 rounded-lg bg-[var(--Rose50)]">
+              <p class="font-bold text-lg text-[var(--Rose800)] mb-2">
+                Preparation time
+              </p>
+              <ul class="ml-5 text-[var(--Stone600)]">
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Total:</span>Approximately
+                    10 minutes
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Preparation:</span>5
+                    minutes
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Cooking:</span>5 minutes
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="my-8">
+              <h1 class="capitalize text-3xl text-[var(--Brown800)]">
+                ingredients
+              </h1>
+              <ul class="py-4 ml-5 text-[var(--Stone600)]">
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]"> 2-3 large eggs </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]"> Salt, to taste </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]"> Pepper, to taste </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    1 tablespoon of butter or oil
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    Optional fillings: cheese, diced vegetables, cooked meats,
+                    herbs
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <hr />
+            <div class="my-8">
+              <h1 class="capitalize text-3xl text-[var(--Brown800)]">
+                instructions
+              </h1>
+              <ol class="py-4 ml-5 text-[var(--Stone600)]">
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Beat the eggs:</span>In a
+                    bowl, beat the eggs with a pinch of salt and pepper until
+                    they are well mixed. You can add a tablespoon of water or
+                    milk for a fluffier texture.
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Heat the pan:</span>Place a
+                    non-stick frying pan over medium heat and add butter or oil.
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Cook the omelette:</span>
+                    the butter is melted and bubbling, pour in the eggs. Tilt
+                    the pan to ensure the eggs evenly coat the surface.
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold"
+                      >Add fillings (optional):</span
+                    >
+                    the eggs begin to set at the edges but are still slightly
+                    runny in the middle, sprinkle your chosen fillings over one
+                    half of the omelette.
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Fold and serve:</span> the
+                    omelette continues to cook, carefully lift one edge and fold
+                    it over the fillings. Let it cook for another minute, then
+                    slide it onto a plate.
+                  </span>
+                </li>
+                <li class="text-[var(--Rose800)]">
+                  <span class="text-[var(--Stone600)]">
+                    <span class="mr-1 font-semibold">Enjoy:</span>Serve hot,
+                    with additional salt and pepper if needed.
+                  </span>
+                </li>
+              </ol>
+            </div>
+            <hr />
+            <div class="my-8">
+              <h1 class="capitalize text-3xl text-[var(--Brown800)]">
+                nutritions
+              </h1>
+              <p class="my-4 text-[var(--Stone600)]">
+                The table below shows nutritional values per serving without the
+                additional fillings.
+              </p>
+              <table class="w-full text-[var(--Stone600)]">
+                <tr class="w-full border-b">
+                  <td class="w-6/12 p-2">Calories</td>
+                  <td class="w-6/12 p-2 text-[var(--Brown800)] font-semibold">
+                    277kcal
+                  </td>
+                </tr>
+                <tr class="w-full border-b">
+                  <td class="w-6/12 p-2">Carbs</td>
+                  <td class="w-6/12 p-2 text-[var(--Brown800)] font-semibold">
+                    0g
+                  </td>
+                </tr>
+                <tr class="w-full border-b">
+                  <td class="w-6/12 p-2">Protein</td>
+                  <td class="w-6/12 p-2 text-[var(--Brown800)] font-semibold">
+                    20g
+                  </td>
+                </tr>
+                <tr class="w-full border-b">
+                  <td class="w-6/12 p-2">Fat</td>
+                  <td class="w-6/12 p-2 text-[var(--Brown800)] font-semibold">
+                    22g
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.michaljirak.cz" target="_blank">Michal Jirak</a>.
+      </div>
+    </main>
+  </body>
+</html>

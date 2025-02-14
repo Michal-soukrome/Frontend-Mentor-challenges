@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="h-screen flex items-start lg:items-center justify-start lg:justify-center bg-[var(--Paleblue)] rounded-3xl"
+  >
+    <div class="w-full lg:w-5/12 mx-auto lg:m-auto">
+      <div class="flex flex-col lg:flex-row bg-white rounded-3xl ">
+        <div class="w-full lg:w-6/12 bg-gradient-bottom rounded-3xl rounded-t-none lg:rounded-t-2xl p-6 lg:p-10">
+          <div
+            class="text-center text-white h-full flex flex-col items-center justify-between"
+          >
+            <div>
+              <h1 class="font-bold text-xl text-[var(--Lightlavender)]">Your Result</h1>
+            </div>
+            <div
+              class="w-48 h-48 flex flex-col items-center justify-center rounded-full bg-gradient-top font-light text-md"
+            >
+              <span class="text-[50px] font-bold">76</span>
+              of 100
+            </div>
+            <div>
+              <h1 class="font-bold text-3xl mb-4">Great</h1>
+              <p class="text-[var(--Lightlavender)]">
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 rounded-3xl p-6 lg:p-10 space-y-10">
+          <div>
+            <h1 class="font-bold text-xl">Summary</h1>
+          </div>
+          <div class="space-y-4">
+            <div
+              class="p-2 rounded-lg flex items-center justify-between bg-[rgba(255,0,0,0.1)]"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="./assets/images/icon-reaction.svg" alt="" />
+                <span class="capitalize font-semibold text-[var(--Lightred)]"
+                  >reaction</span
+                >
+              </div>
+              <div class="font-light">
+                <span class="font-bold">80</span> / 100
+              </div>
+            </div>
+            <div
+              class="p-2 rounded-lg flex items-center justify-between bg-[rgba(255,165,0,0.1)]"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="./assets/images/icon-memory.svg" alt="" />
+                <span
+                  class="capitalize font-semibold text-[var(--Orangeyyellow)]"
+                  >memory</span
+                >
+              </div>
+              <div class="font-light">
+                <span class="font-bold">92</span> / 100
+              </div>
+            </div>
+            <div
+              class="p-2 rounded-lg flex items-center justify-between bg-[rgba(23,201,100,0.1)]"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="./assets/images/icon-verbal.svg" alt="" />
+                <span class="capitalize font-semibold text-[var(--Greenteal)]"
+                  >verbal</span
+                >
+              </div>
+              <div class="font-light">
+                <span class="font-bold">61</span> / 100
+              </div>
+            </div>
+            <div
+              class="p-2 rounded-lg flex items-center justify-between bg-[rgba(55,41,204,0.1)]"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="./assets/images/icon-visual.svg" alt="" />
+                <span class="capitalize font-semibold text-[var(--Cobaltblue)]"
+                  >visual</span
+                >
+              </div>
+              <div class="font-light">
+                <span class="font-bold">73</span> / 100
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="bg-[var(--Darkgrayblue)] text-white w-full py-3 rounded-3xl"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute -bottom-8 lg:bottom-2 attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.michaljirak.cz" target="_blank">Michal Jirak</a>.
+    </div>
+  </body>
+</html>

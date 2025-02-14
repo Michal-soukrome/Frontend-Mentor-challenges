@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary */
+  --Lightred: rgba(255, 0, 0, 1); /* hsl(0, 100%, 67%) */
+  --Orangeyyellow: rgba(255, 178, 51, 1); /* hsl(39, 100%, 56%) */
+  --Greenteal: rgba(23, 201, 100, 1); /* hsl(166, 100%, 37%) */
+  --Cobaltblue: rgba(55, 41, 204, 1); /* hsl(234, 85%, 45%) */
+
+  /* Gradients */
+  --LightslateblueBg: rgba(102, 102, 255, 1); /* hsl(252, 100%, 67%) */
+  --LightroyalblueBg: rgba(73, 63, 232, 1); /* hsl(241, 81%, 54%) */
+  --VioletblueCrc: rgba(69, 45, 181, 1); /* hsla(256, 72%, 46%, 1) */
+  --PersianblueCrc: rgba(69, 45, 181, 0); /* hsla(241, 72%, 46%, 0) */
+
+  /* Neutral */
+  --White: rgba(255, 255, 255, 1); /* hsl(0, 0%, 100%) */
+  --Paleblue: rgba(226, 238, 255, 1); /* hsl(221, 100%, 96%) */
+  --Lightlavender: rgba(210, 200, 255, 1); /* hsl(241, 100%, 89%) */
+  --Darkgrayblue: rgba(48, 57, 89, 1); /* hsl(224, 30%, 27%) */
+}
+
+.bg-gradient-bottom {
+  background: linear-gradient(
+    to bottom,
+    var(--LightslateblueBg),
+    var(--LightroyalblueBg)
+
+  );
+}
+.bg-gradient-top {
+  background: linear-gradient(
+    to top,
+    var(--LightslateblueBg),
+    var(--LightroyalblueBg),
+    var(--VioletblueCrc),
+    var(--PersianblueCrc)
+  );
+}
+
+@font-face {
+    font-family: "worksans";
+    src: url("fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  }
+  
+  * {
+    font-family: "worksans", sans-serif;
+  }

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet -->
+  </head>
+  <body>
+    <main class="min-h-screen">
+      <header class="w-full">
+        <div
+          class="w-10/12 m-auto flex items-center justify-between border-b-none md:border-b py-8"
+        >
+          <div class="flex items-center gap-10">
+            <div class="md:hidden flex items-center justify-center">
+              <button id="menu-toggle">
+                <img src="images/icon-menu.svg" alt="Menu Icon" />
+              </button>
+            </div>
+            <div>
+              <img src="images/logo.svg" alt="Logo" />
+            </div>
+            <nav class="hidden md:flex items-center gap-5 capitalize">
+              <div>Collections</div>
+              <div>Men</div>
+              <div>women</div>
+              <div>about</div>
+              <div>contact</div>
+            </nav>
+          </div>
+          <div class="flex items-center gap-5">
+            <div><img src="images/icon-cart.svg" alt="Cart Icon" /></div>
+            <div>
+              <img
+                src="images/image-avatar.png"
+                class="w-10 h-10"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+        </div>
+        <nav
+          id="mobile-menu"
+          class="hidden md:hidden capitalize bg-white border-b pb-4"
+        >
+          <div class="w-10/12 m-auto space-y-2">
+            <div>Collections</div>
+            <div>Men</div>
+            <div>women</div>
+            <div>about</div>
+            <div>contact</div>
+          </div>
+        </nav>
+      </header>
+      <section id="content">
+        <div class="w-full md:w-9/12 m-auto">
+          <div class="py-20 flex justify-between items-start gap-10">
+            <div class="w-full md:w-5/12">
+              <div>
+                <div class="h-[400px]" id="main-image-wrap">
+                  <img
+                    src="images/image-product-1.jpg"
+                    class="w-full h-full rounded-2xl object-cover object-center cursor-pointer hover:opacity-75 transition-all"
+                    id="main-image"
+                    alt=""
+                  />
+                </div>
+                <div class="w-full flex mt-5 gap-5 flex-nowrap">
+                  <div
+                    class="grow cursor-pointer hover:opacity-75 transition-all relative rounded-2xl"
+                  >
+                    <img
+                      src="images/image-product-1.jpg"
+                      class="rounded-2xl gallery-item"
+                      alt="Gallery Image 1"
+                    />
+                  </div>
+                  <div
+                    class="grow cursor-pointer hover:opacity-75 transition-all relative rounded-2xl"
+                  >
+                    <img
+                      src="images/image-product-2.jpg"
+                      class="rounded-2xl gallery-item"
+                      alt="Gallery Image 2"
+                    />
+                  </div>
+                  <div
+                    class="grow cursor-pointer hover:opacity-75 transition-all relative rounded-2xl"
+                  >
+                    <img
+                      src="images/image-product-3.jpg"
+                      class="rounded-2xl gallery-item"
+                      alt="Gallery Image 3"
+                    />
+                  </div>
+                  <div
+                    class="grow cursor-pointer hover:opacity-75 transition-all relative rounded-2xl"
+                  >
+                    <img
+                      src="images/image-product-4.jpg"
+                      class="rounded-2xl gallery-item"
+                      alt="Gallery Image 4"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12">
+              <div class="pt-20">
+                <div>
+                  <h2 class="uppercase text-sm font-bold tracking-widest">
+                    Sneaker Company
+                  </h2>
+                  <h1 class="capitalize text-5xl font-bold mt-4 mb-8">
+                    Fall Limited Edition Sneakers
+                  </h1>
+                  <div class="mb-6">
+                    <p class="text-lg">
+                      These low-profile sneakers are your perfect casual wear
+                      companion. Featuring a durable rubber outer sole, they’ll
+                      withstand everything the weather can offer.
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-row md:flex-col justify-between md:justify-start"
+                    id="price-wrap"
+                  >
+                    <div class="flex items-center" id="price">
+                      <span class="text-3xl mr-4 font-bold">$125.00</span>
+                      <span
+                        class="bg-black text-sm text-white rounded-lg px-2 py-1"
+                        >50%</span
+                      >
+                    </div>
+                    <div
+                      class="mt-2 text-base line-through font-bold"
+                      id="last-price"
+                    >
+                      $250.00
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 flex items-center gap-5">
+                  <div
+                    class="flex items-center gap-5 rounded-lg bg-gray-100"
+                    id="amount"
+                  >
+                    <img src="images/icon-minus.svg" class="minus p-4" alt="" />
+                    <span class="p-4 font-bold">0</span>
+                    <img src="images/icon-plus.svg" class="plus p-4" alt="" />
+                  </div>
+                  <div class="text-black" id="add-to-cart">
+                    <button
+                      class="px-20 py-4 rounded-lg btn-primary flex gap-2 items-center font-bold"
+                    >
+                      <span><img src="images/icon-cart.svg" alt="" /></span>Add
+                      to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lightbox" class="hidden lightbox">
+          <div class="lightbox-controls relative">
+            <button class="lightbox-close absolute -top-14   right-0">
+              <span class="text-3xl text-white">x</span>
+            </button>
+            <button
+              class="absolute top-1/2 bg-white p-4 rounded-full -left-5"
+              id="prev"
+            >
+              <img src="images/icon-previous.svg" alt="" />
+            </button>
+            <img src="" class="rounded-lg" alt="Lightbox Image" id="lightbox-image" />
+            <button
+              class="absolute top-1/2 bg-white p-4 rounded-full -right-5"
+              id="next"
+            >
+              <img src="images/icon-next.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.michaljirak.cz" target="_blank">Michal Jirak</a>.
+    </div>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const mainImage = document.getElementById("main-image");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightbox-image");
+        const closeBtn = document.querySelector(".lightbox-close");
+        const prevBtn = document.getElementById("prev");
+        const nextBtn = document.getElementById("next");
+        let currentIndex = 0;
+
+        const images = Array.from(galleryItems).map((item) => item.src);
+
+        // Open lightbox on main image click
+        mainImage.addEventListener("click", () => {
+          lightboxImage.src = mainImage.src;
+          lightbox.classList.remove("hidden");
+          currentIndex = images.indexOf(mainImage.src);
+        });
+
+        // Close lightbox on background click
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox) {
+            lightbox.classList.add("hidden");
+          }
+        });
+
+        // Close lightbox on close button click
+        closeBtn.addEventListener("click", (e) => {
+          e.stopPropagation(); // Prevent event from bubbling up to lightbox
+          lightbox.classList.add("hidden");
+        });
+
+        // Swap main image with gallery item on click and add active class
+        galleryItems.forEach((item, index) => {
+          item.addEventListener("click", () => {
+            mainImage.src = item.src;
+            galleryItems.forEach((el) => el.classList.remove("active"));
+            item.classList.add("active");
+            currentIndex = index;
+          });
+        });
+
+        // Navigate through images in lightbox
+        prevBtn.addEventListener("click", (e) => {
+          e.stopPropagation(); // Prevent event from bubbling up to lightbox
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          lightboxImage.src = images[currentIndex];
+        });
+
+        nextBtn.addEventListener("click", (e) => {
+          e.stopPropagation(); // Prevent event from bubbling up to lightbox
+          currentIndex = (currentIndex + 1) % images.length;
+          lightboxImage.src = images[currentIndex];
+        });
+      });
+    </script>
+  </body>
+</html>

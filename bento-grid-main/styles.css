@@ -1,0 +1,141 @@
+:root {
+  --Purple100: hsl(254, 88%, 90%);
+  --Purple500: hsl(256, 67%, 59%);
+  --Yellow100: hsl(31, 66%, 93%);
+  --Yellow500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  display: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: rgb(245, 245, 245);
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 50px;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .parent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeate(1, 1fr);
+  }
+}
+
+div:not(.parent) {
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+div p {
+  text-align: start;
+}
+
+.div1 {
+  grid-column: span 3 / span 3;
+  grid-row: span 5 / span 5;
+  background: var(--Yellow100);
+}
+
+img {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.div2 {
+  grid-column: span 6 / span 6;
+  grid-row: span 4 / span 4;
+  grid-column-start: 4;
+  text-align: center;
+  background: var(--Purple500);
+  color: white;
+}
+
+.div2 p {
+  text-align: center;
+}
+
+.div3 {
+  grid-column: span 3 / span 3;
+  grid-row: span 7 / span 7;
+  grid-column-start: 10;
+  background: var(--Purple100);
+}
+
+.div4 {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 5;
+  background: white;
+}
+
+.div5 {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-column-start: 7;
+  grid-row-start: 5;
+  background: var(--Yellow500);
+}
+
+.div6 {
+  grid-column: span 3 / span 3;
+  grid-row: span 5 / span 5;
+  grid-row-start: 6;
+  background: var(--Yellow500);
+}
+
+.div7 {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 8;
+  background-color: white;
+}
+
+.div7 span {
+  font-size: 80px;
+  font-weight: semibold;
+}
+
+.div8 {
+  grid-column: span 6 / span 6;
+  grid-row: span 3 / span 3;
+  grid-column-start: 7;
+  grid-row-start: 8;
+  background: var(--Purple500);
+  color: white;
+}
+
+.fr-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.fc-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
